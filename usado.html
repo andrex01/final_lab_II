@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"/>
+    <title>Valuación vehiculo usado</title>
+    <script src="./funciones.js"></script>
+</head>
+
+<body class="body5">
+    <a href="./index.html">regresar</a>
+    <header class="header5">
+        <h2> Valuamos tu Mercedes Benz usado </h2>
+    </header>
+
+    <h1> Complete datos segun modelo que posee </h1>
+
+    <form class="form2">
+     
+        <span>Modelo</span>
+        <select name="modelo" id="modelo">
+            <option value=" "> </option>
+            <option value="clasA">Clase A</option>
+            <option value="clasC">Clase C</option>
+            <option value="clasS">Clase S</option>
+            <option value="glb">GLB</option>
+            <option value="glc">GLC</option>
+            <option value="gle">GLE</option>
+            <option value="clasX">Clase X</option>
+            <option value="clasG">CLase G</option>
+            <option value="clasG6">Clase G 6x6</option>
+        </select>
+        <br><br/>
+        
+        <span>Año de fabricación</span>
+        <input type="number" id="n0" name="n0" placeholder="año" min="1950" max="2023" required="required"><a class ="aste"> *</a><br><br>
+        
+        <span>Cantidad de kilometros</span>
+        <input type="number" id="n2" name="n2" placeholder="km" min="1" max="999999" required="required"><a class ="aste"> *</a><br><br>
+       
+        <button type="button" onclick="usado()">Ver precio estimado</button><br><br>
+        <button type="button" onclick="borrar2()">Borrar</button>
+    </form>
+    <br/>
+    <div class="result_consulta" id="resultado"></div>
+        
+</body>
+</html>

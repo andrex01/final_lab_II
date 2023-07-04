@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"/>
+    <title>Consultas</title>
+    <script src="./funciones.js"></script>
+</head>
+
+<body class="body4">
+    <a href="./index.html">regresar</a>
+    <header class="header4">
+        <h2> Consultas sobre nuestros modelos 0 km </h2>
+    </header>
+
+    <h1> Complete datos segun modelo de interés </h1>
+
+    <form class="form1">
+        <span>Tipo de vehículo</span>
+        <br/>
+        <input name="tipo_vehiculo" type="radio" id="Auto" value="vehiculo" />Auto
+        <br/>
+        <input name="tipo_vehiculo" type="radio" id="SUV" value="vehiculo" />SUV
+        <br/>
+        <input name="tipo_vehiculo" type="radio" id="Todoterreno" value="vehiculo" />Todoterreno
+        <br/>
+        <br>
+        <span>Modelo</span>
+        <select name="modelo" id="modelo">
+            <option value=" "> </option>
+            <option value="clasA">Clase A</option>
+            <option value="clasC">Clase C</option>
+            <option value="clasS">Clase S</option>
+            <option value="glb">GLB</option>
+            <option value="glc">GLC</option>
+            <option value="gle">GLE</option>
+            <option value="clasX">Clase X</option>
+            <option value="clasG">CLase G</option>
+            <option value="clasG6">Clase G 6x6</option>
+        </select>
+        <br><br/>
+        <button type="button" onclick="auto()">Ver resultado</button><br><br>
+        <button type="button" onclick="borrar()">Borrar</button>
+    </form>
+    <br/>
+    <div class="result_consulta" id="resultado"></div>
+
+    <footer>
+        <div class="encapsulado10">
+            Para consultas sobre stock, comunicarse al 355-5736098
+        </div>
+     
+    </footer>
+        
+</body>
+</html>
